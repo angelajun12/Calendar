@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import JTAppleCalendar
 
 class ViewController: UIViewController {
-
+    let formatter = DateFormatter();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+}
 
-
+extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
+    func configureCalendar(_calendar: JTAppleCalendarView) -> ConfigurationParameters {
+        formatter.dateFormat = "MM dd yyyy"
+        formatter.timeZone = Calendar.current.timeZone
+        formatter.locale = Calendar.current.locale
+        
+        let startDate = formatter.date(from: "09 01 2018")
+        let endDate = formatter.date(from: "12 31 2018")
+        
+        let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
+        return parameters
+    }
+    func calendar(_calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: cellState, indexPath: indexPath) -> JTAppleCell{
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCell", for: indexPath) as! CustomCell
+        cell.dateLabel.text = cellState.text
+        return cell
+    }
 }
 
