@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5243DA36D233685042A03329 /* Pods_Calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8EBD2C67D10E36E27551560 /* Pods_Calendar.framework */; };
 		C83BC2482177DDEE007B07A9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83BC2472177DDEE007B07A9 /* CustomCell.swift */; };
+		C8535B3A2178302B006E05A8 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8535B3B2178302B006E05A8 /* JTAppleCalendar.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		C8A292382166729800FFE411 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A292372166729800FFE411 /* AppDelegate.swift */; };
 		C8A2923A2166729800FFE411 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A292392166729800FFE411 /* ViewController.swift */; };
 		C8A2923D2166729800FFE411 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8A2923B2166729800FFE411 /* Main.storyboard */; };
@@ -24,9 +25,10 @@
 		B8EBD2C67D10E36E27551560 /* Pods_Calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DF83D35062A2A42338530A /* Pods-Calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calendar/Pods-Calendar.debug.xcconfig"; sourceTree = "<group>"; };
 		C83BC2472177DDEE007B07A9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C8535B3B2178302B006E05A8 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A292342166729800FFE411 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8A292372166729800FFE411 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C8A292392166729800FFE411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8A292392166729800FFE411 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xcconfig; };
 		C8A2923C2166729800FFE411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8A2923E2166729800FFE411 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8A292412166729800FFE411 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8535B3A2178302B006E05A8 /* JTAppleCalendar.framework in Frameworks */,
 				5243DA36D233685042A03329 /* Pods_Calendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +54,7 @@
 		7FE3739861732E3A197DB32E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C8535B3B2178302B006E05A8 /* JTAppleCalendar.framework */,
 				B8EBD2C67D10E36E27551560 /* Pods_Calendar.framework */,
 			);
 			name = Frameworks;

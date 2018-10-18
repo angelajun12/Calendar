@@ -13,12 +13,12 @@
         <!--Ib Calendar Data Source-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calendar" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-qm-Qhl" customClass="JTAppleCalendarView">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-qm-Qhl" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="353"/>
                                 <color key="backgroundColor" red="0.98967842350000002" green="1" blue="0.249875288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -95,6 +95,8 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="9an-TT-Z8P"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5yn-uo-Sb0"/>
                                     <outlet property="ibCalendarDataSource" destination="BYZ-38-t0r" id="Qeq-0N-ujD"/>
                                     <outlet property="ibCalendarDelegate" destination="BYZ-38-t0r" id="qpF-my-62b"/>
                                 </connections>

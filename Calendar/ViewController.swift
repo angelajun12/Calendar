@@ -27,12 +27,12 @@ class ViewController: UIViewController {
 
 extension ViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
     func configureCalendar(_calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        formatter.dateFormat = "MM dd yyyy"
+        formatter.dateFormat = "yyyy MM dd"
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         
-        let startDate = formatter.date(from: "09 01 2018")
-        let endDate = formatter.date(from: "12 31 2018")
+        let startDate = formatter.date(from: "2018 09 01")
+        let endDate = formatter.date(from: "2018 12 31")
         
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
         return parameters
